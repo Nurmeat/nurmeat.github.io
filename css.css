@@ -97,6 +97,16 @@ nav ul a {
     justify-content: center;
     width: 100vw;
 }
+
+.icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 5vw !important;
+    margin-top: 150%
+}
+
 .img_content img {
     width: 100%;
     object-fit: cover;
@@ -104,22 +114,32 @@ nav ul a {
 
 footer {
     display: flex;
-    width: calc(100vw - 100px);
-    flex-direction: column;
-    margin: 50px;
+    width: 90vw;
+    flex-direction: row;
+    margin: 5vw;
     justify-content: space-between;
 }
 
 footer div {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    line-height: 1.5;
+    gap: 10px;
+}
+
+.footer_left {
+    font-size: 15pt;
     justify-content: space-between;
-    align-items: center;
+}
+
+.footer_left img {
+    width: 8vw;
+    margin-right: 10px;
 }
 
 .bold_font {
     font-family: 'Noto Sans KR', sans-serif;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 25pt;
     color: #555555;
 }
