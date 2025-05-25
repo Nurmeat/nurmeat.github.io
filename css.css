@@ -1,0 +1,125 @@
+/* Eric Meyer's Reset CSS (v2.0) */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote::before, blockquote::after,
+q::before, q::after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+html, body {
+  overflow: auto;
+  -ms-overflow-style: none; /* IE, Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+/* WebKit 브라우저 (Chrome, Safari)용 */
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none;
+}
+
+nav {
+    display: flex;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 94vw;
+    height: 10vh;
+    background: transparent url('./assests/img/nav_background.svg') 0% 0% no-repeat padding-box;
+    justify-content: space-between;
+    padding: 0px 3vw;
+    opacity: 1;
+}
+
+nav img {
+    margin: 10px 10px 10px 60px;
+}   
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+nav ul a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 50px;
+    height: 100%;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.img_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+}
+.img_content img {
+    width: 100%;
+    object-fit: cover;
+}
+
+footer {
+    display: flex;
+    width: calc(100vw - 100px);
+    flex-direction: column;
+    margin: 50px;
+    justify-content: space-between;
+}
+
+footer div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bold_font {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #555555;
+}
