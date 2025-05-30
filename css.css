@@ -67,8 +67,10 @@ nav {
     opacity: 1;
 }
 
-nav img {
+nav a img {
+    display: flex;
     margin: 10px 10px 10px 60px;
+    height: -webkit-fill-available;
 }   
 
 nav ul {
