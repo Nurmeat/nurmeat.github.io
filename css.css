@@ -181,6 +181,19 @@ nav ul a{
   margin-top: 20vh;
 }
 
+#news_main {
+  color:black;
+  font-weight: 600;
+  line-height: 10vh;
+}
+
+#news_sub {
+  color: black; 
+  font-weight: 600; 
+  line-height: normal; 
+  font-size: 3.5vh;
+}
+
 .article_container {
     display: grid;
     padding: 10vh 8.5vw;
