@@ -4,77 +4,98 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/e212dea02c.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/image-map-resizer@1.0.10/js/imageMapResizer.min.js"></script>
     <link rel="stylesheet" href="./css.css">
     <title>Nurmeat</title>
 </head>
 <body>
     <header>
         <nav class="nav">
-            <a href="./index.html"><img src="./assests/img/logo.png" alt="Nurmeat Logo" class="logo"></a>
+            <a href="./index.html"><img class="nav_img" src="./assets/img/logo.png" alt="Nurmeat Logo"></a>
             <ul class="nav-list">
-                <li><a href="./about.html">ABOUT</a></li>
-                <li><a href="./rnd.html">R&D</a></li>
-                <li><a href="./news.html">NEWS</a></li>
-                <li><a href="./contact.html">CONTACT</a></li>
+                <li><a href="./about.html"><img class="nav_img nav_link" src="./assets/img/nav_about.png" alt="ABOUT"></a></li>
+                <li><a href="./rnd.html"><img class="nav_img nav_link" src="./assets/img/nav_rnd.png" alt="R&D"></a></li>
+                <li><a href="./news.html"><img class="nav_img nav_link" src="./assets/img/nav_news.png" alt="NEWS"></a></li>
+                <li><a href="./contact.html"><img class="nav_img nav_link" src="./assets/img/nav_contact.png" alt="CONTACT"></a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section class="main_content">
-            <div class="img_content">
-                <img src="./assests/img/main.png" alt="Main">
+            <div class="video_container">
+                <video autoplay muted loop playsinline>
+                    <source src="./assets/video/main.mp4" type="video/mp4">
+                    브라우저가 비디오를 지원하지 않습니다.
+                </video>
+                <div class="video_overlay">
+                    <div class="subtxt">
+                        Meat Meets Wellness
+                    </div>
+                    <div class="maintxt">
+                        간호사들이 완성한<br>
+                        <span style="font-weight: bold;">건강한 육류 식문화</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="main_content">
+            <div class="img_container">
+                <img src="./assets/img/main1-1.png" alt="Main">
+            </div>
+        </section>
+        <section class="main_content">
+            <div class="img_container">
+                <a href="./about.html"><img class="link" src="./assets/img/link_brand.png" alt="Brand_Link"></a>
+            </div>
+        </section>
+        <section class="main_content">
+            <div class="img_container">
+                <img src="./assets/img/main1-2.png" alt="Brand_Logo">
+            </div>
+        </section>
+        <section class="main_content">
+            <div class="article_container">
+                <div class="article_title">
+                    <div class="maintxt" style="color:black; font-weight: 500;">
+                        널미트의<br>
+                        순간들,
+                    </div>
+                    <div class="subtxt" style="color: black; font-weight: normal; line-height: normal;">
+                        널미트의 다양한 소식들을<br>확인해보세요.
+                    </div>
+                </div>
+                <div class="article">
+                    <h2>Our Mission</h2>
+                    <p>
+                        Nurmeat는 건강한 육류 식문화를 선도하며, 
+                        지속 가능한 생산과 소비를 통해 지구 환경을 보호하는 것을 목표로 합니다.
+                    </p>
+                </div>
+                <div class="article">
+                    <h2>Contact Us</h2>
+                    <p>
+                        궁금한 점이 있으시면 언제든지 연락해 주세요. 
+                        우리는 고객의 의견을 소중히 여기며, 최상의 서비스를 제공하기 위해 노력합니다.
+                    </p>
+                </div>
+                <div class="article">
+                    <h2>Follow Us</h2>
+                    <p>
+                        우리의 최신 소식과 이벤트를 놓치지 않으려면 소셜 미디어를 팔로우하세요. 
+                        다양한 혜택과 정보를 제공하고 있습니다.
+                    </p>
+                </div>
+            </div>
+
+        </section>
+        <section class="main_content">
+            <div class="img_container">
+                <img src="./assets/img/footer.png" alt="Footer" usemap="#contact_link">
+                <map name="contact_link">
+                    <area shape="rect" coords="100,300,250,350" href="./contact.html" alt="Contact">
+                </map>
             </div>
         </section>
     </main>
-        <!-- <section class="main_content">
-            <div class="img_content">
-                <img src="./assests/img/main_2.jpg" alt="Main2">
-            </div>
-        </section>
-        <section class="main_content">
-            <div class="img_content">
-                <img src="./assests/img/main_3.jpg" alt="Main3">
-            </div>
-        </section>
-        <section class="main_content">
-            <div class="img_content">
-                <img src="./assests/img/main_4.png" alt="Main4">
-            </div>
-        </section>
-        <section class="main_content">
-            <div class="img_content">
-                <a href="#">
-                    <img class="icon" src="./assests/img/main_brand.png" alt="MainBrand">
-                </a>
-            </div>
-            <div class="img_content">
-                <img src="./assests/img/main_5.png" alt="Main5">
-            </div>
-        </section>
-    </main>
-    <footer>
-        <div class="footer_left">
-            <img src="./assests/img/footer_logo.png" alt="">
-            대표 전화 | 053-716-7992<br>
-            이메일 | nurmeat@naver.com (문의 및 협업 관련)
-        </div>
-        <div class="footer_right">
-            <div class="footer_text">
-                <div class="bold_font">(주)널미트</div>
-            </div>
-            <br>
-            법인명 | 주식회사 널미트 (Nurmeat Co., Ltd.)<br>
-            대표자 | 장현익, 홍정욱<br>
-            설립일 | 2023년 12월<br>
-            개업연원일 | 2024년 07월 22일<br>
-            법인등록번호 | 170111-0966236<br>
-            사업자등록번호 | 327-87-03145<br>
-            업종 | 제조업, 도매 및 소매업, 전문 과학 및 기술서비스업<br>
-            주요 사업 | 식육 포장처리 및 가공업, 육류 판매업, 시각 디자인업<br><br>
-            본사 | 대구광역시 달성군 화원읍 성천로 5, 달성청년혁신센터 입주기업실 404호<br>
-            제1공장 | 대구광역시 달성군 옥포읍 비슬로 2312-16<br>
-            기업 부설 연구소 | 대구광역시 남구 명덕로 104 대구청년창업사관학교
-        </div>
-    </footer> -->
 </body>
 </html>

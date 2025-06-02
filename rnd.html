@@ -10,19 +10,32 @@
 <body>
     <header>
         <nav class="nav">
-            <a href="./index.html"><img src="./assests/img/logo.png" alt="Nurmeat Logo" class="logo"></a>
+            <a href="./index.html"><img class="nav_img" src="./assets/img/logo.png" alt="Nurmeat Logo"></a>
             <ul class="nav-list">
-                <li><a href="./about.html">ABOUT</a></li>
-                <li><a href="./rnd.html">R&D</a></li>
-                <li><a href="./news.html">NEWS</a></li>
-                <li><a href="./contact.html">CONTACT</a></li>
+                <li><a href="./about.html"><img class="nav_img nav_link" src="./assets/img/nav_about.png" alt="ABOUT"></a></li>
+                <li><a href="./rnd.html"><img class="nav_img nav_link" src="./assets/img/nav_rnd.png" alt="R&D"></a></li>
+                <li><a href="./news.html"><img class="nav_img nav_link" src="./assets/img/nav_news.png" alt="NEWS"></a></li>
+                <li><a href="./contact.html"><img class="nav_img nav_link" src="./assets/img/nav_contact.png" alt="CONTACT"></a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section class="main_content">
-            <div class="img_content">
-                <img src="./assests/img/rnd.png" alt="R&D">
+            <div class="img_container">
+                <img src="./assets/img/rnd.png" alt="R&D">
+            </div>
+        </section>
+        <section class="main_content">
+            <div class="img_container" style="margin-top:20vh">
+                <a href="#"><img src="./assets/img/shop_banner.png" alt="R&D"></a>
+            </div>
+        </section>
+        <section class="main_content">
+            <div class="img_container">
+                <img src="./assets/img/footer.jpg" alt="Footer" usemap="#contact_link">
+                <map name="contact_link">
+                    <area shape="rect" coords="100,300,250,350" href="./contact.html" alt="Contact">
+                </map>
             </div>
         </section>
     </main>
