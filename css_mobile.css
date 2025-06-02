@@ -1,5 +1,18 @@
 @media(max-width: 600px) {
 
+    .video_container {
+        height: 30vh;
+    }
+
+    .maintxt {
+        font-size: 5vw;
+        line-height: 6vw;
+    }
+    .subtxt {
+        font-size: 3vw;
+        line-height: 4vw;
+    }
+
     nav {
         height: 5vh;
         padding: 0;
@@ -35,5 +48,48 @@
 
     .link, #shop_banner, #contact_image {
         margin-top: 5vh;
+    }
+
+    .article_container2, .article_container {
+        padding: 5vh 5vw;
+        gap: 2vh;
+        width: 90vw;
+    }
+
+    .article_title {
+        gap: 1vh;
+    }
+
+    #news_main {
+        font-size: 5vw;
+        color:black;
+        font-weight: 600;
+        line-height: 5vw;
+    }
+
+    #news_sub {
+        color: black; 
+        font-weight: 600; 
+        line-height: normal; 
+        font-size: 2vw;
+    }
+
+    .news_container2, .news_container {
+        gap: 1vw;
+        padding: 2vw 0.3vh;
+    }
+
+    .news_text {
+        font-size: 5vw;
+        line-height: 3vh;
+    }
+
+    .news_date, .news_category, .news_title {
+        font-size: 1.5vw !important;
+        line-height: 1vh !important;
+    }
+
+    .article_image img {
+        border-radius: 10px;
     }
 }
