@@ -5,24 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/e212dea02c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css.css">
+    <link rel="stylesheet" href="./css_mobile.css">
     <title>Nurmeat</title>
 </head>
 <body>
     <header>
         <nav class="nav">
-            <a href="./index.html"><img src="./assests/img/logo.png" alt="Nurmeat Logo" class="logo"></a>
+            <a href="./index.html"><img class="nav_img" src="./assets/img/logo.png" alt="Nurmeat Logo"></a>
             <ul class="nav-list">
-                <li><a href="./about.html">ABOUT</a></li>
-                <li><a href="./rnd.html">R&D</a></li>
-                <li><a href="./news.html">NEWS</a></li>
-                <li><a href="./contact.html">CONTACT</a></li>
+                <li><a href="./about.html"><img class="nav_img nav_link" src="./assets/img/nav_about.png" alt="ABOUT"></a></li>
+                <li><a href="./rnd.html"><img class="nav_img nav_link" src="./assets/img/nav_rnd.png" alt="R&D"></a></li>
+                <li><a href="./news.html"><img class="nav_img nav_link" src="./assets/img/nav_news.png" alt="NEWS"></a></li>
+                <li><a href="./contact.html"><img class="nav_img nav_link" src="./assets/img/nav_contact.png" alt="CONTACT"></a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section class="main_content">
-            <div class="img_content">
-                <img src="./assests/img/contact.jpg" alt="Contact">
+            <div id="contact_image" class="img_container">
+                <img src="./assets/img/contact.jpg" alt="Contact">
+            </div>
+        </section>
+        <section class="main_content">
+            <div class="img_container">
+                <img src="./assets/img/footer.jpg" alt="Footer" usemap="#contact_link">
+                <map name="contact_link">
+                    <area shape="rect" coords="100,300,250,350" href="./contact.html" alt="Contact">
+                </map>
             </div>
         </section>
     </main>
