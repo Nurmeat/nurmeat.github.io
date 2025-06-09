@@ -71,6 +71,8 @@ nav {
 
 .nav_img {
     display: flex;
+    /* 추가 */
+    width: 100%;
     margin: 2vh 1vw 2vh 3vw;
     height: -webkit-fill-available;
 }   
