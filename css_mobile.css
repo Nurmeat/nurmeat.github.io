@@ -14,10 +14,11 @@
   nav {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start !important;  /* ✅ 왼쪽 정렬 고정 */
     padding: 1.2vh 3vw;
     background-size: cover;
     flex-wrap: nowrap;
+    gap: 2vw;  /* ✅ 로고와 메뉴 사이 여백 유지 */
   }
 
   /* ✅ 로고 이미지 */
@@ -27,7 +28,7 @@
     margin: 0;
   }
 
-  /* ✅ 메뉴 이미지형 (아이콘) */
+  /* ✅ 메뉴 이미지형 (아이콘 메뉴) */
   .nav_link {
     height: 2.1vh !important;
     object-fit: contain;
@@ -43,9 +44,10 @@
     overflow-x: auto;
     flex-wrap: nowrap;
 
-    margin-left: 1vw;       /* ⬅️ 좌측 여백 줄임 */
-    padding-right: 1vw;     /* ⬅️ 우측 여백도 미세 조정 */
-    gap: 1.8vw;             /* ⬅️ 메뉴 간 간격 조정 */
+    margin-left: 0 !important;   /* ✅ 좌측 여백 제거 */
+    padding-left: 0 !important;
+    padding-right: 1vw;
+    gap: 1.8vw;
 
     list-style: none;
     -webkit-overflow-scrolling: touch;
@@ -69,7 +71,7 @@
 
   /* 🎬 비디오 영역 */
   .video_container {
-    height: 27vh;
+    height: 34vh;
   }
 
   .video_container video {
