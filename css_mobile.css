@@ -1,6 +1,6 @@
 @media (max-width: 600px) {
 
-  /* ✅ nav 전체 줄이기 */
+  /* nav 구조 정리 */
   nav {
     display: flex;
     flex-direction: row;
@@ -12,7 +12,7 @@
     flex-wrap: nowrap;
   }
 
-  /* ✅ 로고 이미지 (좌측) */
+  /* 로고 이미지 */
   .nav_img:not(.nav_link) {
     height: 4vh !important;
     width: auto !important;
@@ -20,7 +20,7 @@
     margin: 0;
   }
 
-  /* ✅ 메뉴 항목 이미지 (ABOUT, R&D 등) */
+  /* 메뉴 이미지 */
   .nav_link {
     height: 2vh !important;
     width: auto !important;
@@ -28,7 +28,7 @@
     margin: 0;
   }
 
-  /* ✅ 메뉴 리스트 스타일 */
+  /* 메뉴 리스트 */
   nav ul {
     display: flex;
     flex-direction: row;
@@ -49,7 +49,7 @@
     height: 100%;
   }
 
-  /* ✅ 비디오 깨짐 방지 */
+  /* 비디오 짤림 방지 */
   .video_container {
     height: 100dvh;
   }
@@ -60,7 +60,7 @@
     width: 100%;
   }
 
-  /* ✅ 기사(article) 레이아웃 유지 */
+  /* 기사 영역 스타일 */
   .article_container2, .article_container {
     padding: 5vh 5vw;
     gap: 2vh;
