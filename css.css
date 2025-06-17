@@ -1,6 +1,6 @@
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
 
-/* Reset */
+/* ===== Reset ===== */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,7 +20,7 @@ time, mark, audio, video {
   font-size: 100%;
   vertical-align: baseline;
 }
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
 }
@@ -43,7 +43,7 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
   display: none;
 }
 
-/* Navigation */
+/* ===== Navigation ===== */
 nav {
   display: flex;
   position: fixed;
@@ -53,8 +53,8 @@ nav {
   height: 11vh;
   background: transparent url('./assets/img/nav_background.svg') no-repeat padding-box;
   justify-content: space-between;
-  padding: 0 3.5vw;
   align-items: center;
+  padding: 0 3.5vw;
   z-index: 99;
 }
 
@@ -62,7 +62,7 @@ nav {
   width: 160px;
   height: auto;
   object-fit: contain;
-  margin: 2vh 1vw 2vh 0;
+  margin: 0;
   display: block;
 }
 
@@ -95,7 +95,7 @@ nav ul a {
   height: 100%;
 }
 
-/* Video */
+/* ===== Video Section ===== */
 .video_container {
   position: relative;
   width: 100%;
@@ -135,7 +135,7 @@ nav ul a {
   color: #FFF;
 }
 
-/* Content Containers */
+/* ===== Content Section ===== */
 .img_container, .link {
   display: flex;
   flex-direction: column;
@@ -143,19 +143,24 @@ nav ul a {
   justify-content: center;
   width: 100vw;
 }
+.img_container img {
+  width: 100%;
+  object-fit: cover;
+}
+.link {
+  margin-top: 20vh;
+  width: 6vw !important;
+}
+#shop_banner {
+  margin-top: 20vh;
+}
 
-.img_container img { width: 100%; object-fit: cover; }
-.link { margin-top: 20vh; width: 6vw !important; }
-
-#shop_banner { margin-top: 20vh; }
-
-/* News Section */
+/* ===== News Section ===== */
 #news_main {
   color: black;
   font-weight: 600;
   line-height: 10vh;
 }
-
 #news_sub {
   color: black;
   font-weight: 600;
@@ -170,62 +175,53 @@ nav ul a {
   gap: 4.5vh 0;
   width: 83vw;
 }
-
 .article_title {
   display: flex;
   flex-direction: column;
   gap: 5vh;
 }
-
 .article_content {
   display: flex;
   flex-direction: column;
   border-top: 2px solid #000;
   border-bottom: 1px solid #000;
 }
-
 .news_container {
   display: flex;
   gap: 4vw;
   padding: 5vh 0.3vw;
   border-bottom: 1px solid #000;
 }
-
 .news_text {
   font-size: 3vh;
   line-height: 3vh;
   font-weight: 500;
   color: #888;
 }
-
 .news_title {
   text-decoration: none;
   font-weight: 600;
   color: #000 !important;
 }
-
 .news_date {
   font-size: 2.7vh !important;
   margin-left: auto;
 }
-
 .article_link {
   display: flex;
   justify-content: flex-start;
   align-items: end;
 }
-
 .article_image {
   display: flex;
   justify-content: space-between;
 }
-
 .article_image img {
   width: 31%;
   border-radius: 40px;
 }
 
-/* Responsive (Mobile) */
+/* ===== Mobile (Responsive) ===== */
 @media screen and (max-width: 600px) {
   nav {
     height: 8vh;
