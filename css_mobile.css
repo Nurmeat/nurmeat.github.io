@@ -1,6 +1,8 @@
 @media (max-width: 600px) {
+
+  /* 비디오 영역 */
   .video_container {
-    height: 100svh; /* iOS & 안드로이드 최신 브라우저 대응 */
+    height: 100svh;
   }
 
   .video_container video {
@@ -8,7 +10,6 @@
     width: 100%;
     height: 100%;
   }
-}
 
   /* 로고 이미지 */
   .nav_img:not(.nav_link) {
@@ -47,18 +48,7 @@
     height: 100%;
   }
 
-  /* 비디오 짤림 방지 */
-  .video_container {
-    height: 100dvh;
-  }
-
-  .video_container video {
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
-  }
-
-  /* 기사 영역 스타일 */
+  /* 기사 영역 */
   .article_container2, .article_container {
     padding: 5vh 5vw;
     gap: 2vh;
