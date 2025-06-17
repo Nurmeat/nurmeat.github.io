@@ -19,9 +19,13 @@
         justify-content: space-evenly;
     }
 
-    .nav_img {
+      .nav_img {
         margin: 0;
-    }   
+        width: 120px;
+        height: auto;
+        object-fit: contain;
+        display: block;
+    }
 
     nav ul {
         display: flex;
