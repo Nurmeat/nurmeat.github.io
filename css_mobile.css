@@ -1,47 +1,49 @@
 @media (max-width: 600px) {
 
-  /* 메뉴 이미지만 크기 줄이기 */
+  /* 메뉴 항목 이미지만 작게 */
   .nav_link {
-    height: 2vh !important;  /* 절반 수준으로 줄임 */
+    height: 2vh !important;
     width: auto !important;
     object-fit: contain !important;
     margin: 0 !important;
   }
-}
 
-  /* 로고 이미지 */
+  /* 로고 이미지 (좌측 로고는 nav_img만 있고 nav_link 없음) */
   .nav_img {
-    height: 4vh;
-    width: auto;
-    object-fit: contain;
-    margin: 0;
+    height: 4vh !important;
+    width: auto !important;
+    object-fit: contain !important;
+    margin: 0 !important;
   }
 
-  /* 메뉴 항목 이미지 */
-  .nav_link {
-    height: 2.2vh;
-    width: auto;
-    object-fit: contain;
-    margin: 0;
+  /* nav 바 전체 정리 */
+  nav {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    height: auto !important;
+    padding: 1vh 3vw !important;
+    background-size: cover !important;
+    flex-wrap: nowrap !important;
   }
 
-  /* 메뉴 리스트 ul */
   nav ul {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-end;
-    gap: 2vw;
-    margin: 0;
-    padding: 0;
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: flex-end !important;
+    gap: 1.5vw !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    flex-wrap: nowrap !important;
   }
 
   nav ul a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    padding: 0 1vw;
-    height: 100%;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    height: 100% !important;
+    padding: 0 1vw !important;
+    text-decoration: none !important;
   }
 }
