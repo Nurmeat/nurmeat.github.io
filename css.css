@@ -70,12 +70,12 @@ nav {
 }
 
 .nav_img {
-    display: flex;
-    /* 추가 */
-    width: 100%;
+    width: 160px;
+    height: auto;
+    object-fit: contain;
     margin: 2vh 1vw 2vh 3vw;
-    height: -webkit-fill-available;
-}   
+    display: block;
+}
 
 nav ul {
     display: flex;
