@@ -1,5 +1,85 @@
 @media (max-width: 600px) {
 
+  /* 📌 기본 초기화 */
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+  }
+
+  /* 📌 네비게이션 */
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1vh 3vw;
+    background-size: cover;
+    flex-wrap: nowrap;
+    height: auto;
+  }
+
+  /* ✅ 로고 이미지 */
+  .nav_img:not(.nav_link) {
+    height: 3.5vh !important;
+    object-fit: contain;
+    margin: 0;
+  }
+
+  /* ✅ 메뉴 이미지형 (아이콘 메뉴 등) */
+  .nav_link {
+    height: 2vh !important;
+    object-fit: contain;
+    margin: 0;
+  }
+
+  /* ✅ 메뉴 리스트 (텍스트 메뉴일 경우) */
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    margin-left: 2vw;
+    padding-right: 2vw;
+    gap: 0.8vw;
+    list-style: none;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  nav ul a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0.5vw;
+    font-size: 0.75rem;
+    white-space: nowrap;
+    text-decoration: none;
+    height: 100%;
+  }
+
+  /* 🎬 비디오 영역 */
+  .video_container {
+    height: 35vh;
+  }
+
+  .video_container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* 📝 메인 텍스트 */
+  .maintxt {
+    font-size: 5.5vw;
+    line-height: 6.5vw;
+  }
+
+  .subtxt {
+    font-size: 3.5vw;
+    line-height: 5vw;@media (max-width: 600px) {
+
   /* 📌 전체 초기화 */
   html, body {
     margin: 0;
@@ -91,8 +171,8 @@
   .article_container2 {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    gap: 1.2vh 2vw;              /* ✅ 세로 간격 축소 */
-    padding: 3.5vh 5vw;
+    gap: 2vh 3vw;
+    padding: 4vh 5vw;
     width: 90vw;
     align-items: start;
   }
@@ -105,41 +185,40 @@
   }
 
   .article_title {
-    gap: 0.8vh;
+    gap: 1vh;
   }
 
   #news_main {
     font-size: 5.2vw;
-    line-height: 6vw;           /* ✅ 살짝 줄임 */
+    line-height: 6.5vw;
   }
 
   #news_sub {
     font-size: 3.6vw;
-    line-height: 4.5vw;         /* ✅ 줄임 */
+    line-height: 5vw;
   }
 
   .news_text {
     font-size: 3.8vw;
-    line-height: 4.2vw;         /* ✅ 줄임 */
-    margin-bottom: 0.3vh;
+    line-height: 4.6vw;
+    margin-bottom: 0.8vh;
   }
 
   .news_date,
-.news_category,
-.news_title {
-  font-size: 2.0vw !important;        /* 🔽 폰트 크기 줄임 */
-  line-height: 2.8vw !important;     /* 🔽 줄 간격 줄임 */
-  margin: 0.1vh 0 !important;         /* 🔽 위아래 여백 최소화 */
-  color: #666;                        /* 🔧 회색톤으로 정보 강조도 낮춤 (선택사항) */
-}
+  .news_category,
+  .news_title {
+    font-size: 2.5vw !important;
+    line-height: 3.4vw !important;
+    margin: 0.2vh 0 !important;
+  }
 
   .news_item {
-    margin-bottom: 0.8vh;       /* ✅ 항목 간 여백 줄임 */
+    margin-bottom: 1.2vh;
   }
 
   .news_item + .news_item {
     border-top: 1px solid #ddd;
-    padding-top: 0.8vh;
+    padding-top: 1vh;
   }
 
   /* 🖼 이미지 */
