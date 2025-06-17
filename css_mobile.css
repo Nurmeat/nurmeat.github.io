@@ -1,67 +1,75 @@
 @media (max-width: 600px) {
 
-  /* 📌 기본 초기화 */
+  /* 📌 전체 초기화 */
   html, body {
     margin: 0;
     padding: 0;
     height: 100%;
     overflow-x: hidden;
+    font-family: 'Pretendard', 'Apple SD Gothic Neo', sans-serif;
+    -webkit-font-smoothing: antialiased;
   }
 
-  /* 📌 네비게이션 */
+  /* 📌 네비게이션 바 */
   nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1vh 3vw;
+    padding: 1.2vh 3vw;
     background-size: cover;
     flex-wrap: nowrap;
-    height: auto;
   }
 
   /* ✅ 로고 이미지 */
   .nav_img:not(.nav_link) {
-    height: 3.5vh !important;
+    height: 3.4vh !important;
     object-fit: contain;
     margin: 0;
   }
 
-  /* ✅ 메뉴 이미지형 (아이콘 메뉴 등) */
+  /* ✅ 메뉴 이미지형 (아이콘) */
   .nav_link {
-    height: 2vh !important;
+    height: 2.1vh !important;
     object-fit: contain;
     margin: 0;
   }
 
-  /* ✅ 메뉴 리스트 (텍스트 메뉴일 경우) */
+  /* ✅ 텍스트 메뉴 */
   nav ul {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    flex-wrap: nowrap;
     overflow-x: auto;
-    margin-left: 2vw;
-    padding-right: 2vw;
-    gap: 0.8vw;
+    flex-wrap: nowrap;
+
+    margin-left: 1vw;       /* ⬅️ 좌측 여백 줄임 */
+    padding-right: 1vw;     /* ⬅️ 우측 여백도 미세 조정 */
+    gap: 1.8vw;             /* ⬅️ 메뉴 간 간격 조정 */
+
     list-style: none;
     -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  nav ul::-webkit-scrollbar {
+    display: none;
   }
 
   nav ul a {
+    font-size: 0.82rem;
+    padding: 0.3rem 0.7rem;
+    white-space: nowrap;
+    text-decoration: none;
+    color: #222;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0 0.5vw;
-    font-size: 0.75rem;
-    white-space: nowrap;
-    text-decoration: none;
-    height: 100%;
   }
 
   /* 🎬 비디오 영역 */
   .video_container {
-    height: 35vh;
+    height: 27vh;
   }
 
   .video_container video {
@@ -70,18 +78,22 @@
     object-fit: cover;
   }
 
-  /* 📝 메인 텍스트 */
+  /* 📝 메인 카피 */
   .maintxt {
-    font-size: 5.5vw;
-    line-height: 6.5vw;
+    font-size: 5vw;
+    line-height: 6.2vw;
+    font-weight: 600;
+    letter-spacing: -0.2px;
   }
 
   .subtxt {
-    font-size: 3.5vw;
-    line-height: 5vw;
+    font-size: 3.4vw;
+    line-height: 4.8vw;
+    font-weight: 400;
+    color: #444;
   }
 
-  /* 📰 기사 레이아웃 */
+  /* 📰 기사 */
   .article_container,
   .article_container2 {
     display: grid;
@@ -92,44 +104,56 @@
     align-items: start;
   }
 
+  @media (max-width: 450px) {
+    .article_container,
+    .article_container2 {
+      grid-template-columns: 1fr;
+    }
+  }
+
   .article_title {
     gap: 1vh;
   }
 
   #news_main {
-    font-size: 5.2vw;
-    line-height: 6.5vw;
+    font-size: 4.8vw;
+    line-height: 6.2vw;
+    font-weight: 700;
   }
 
   #news_sub {
     font-size: 3.6vw;
     line-height: 5vw;
+    font-weight: 500;
   }
 
   .news_text {
-    font-size: 3.8vw;
-    line-height: 5.2vw;
+    font-size: 3.4vw;
+    line-height: 5vw;
+    font-weight: 400;
+    color: #333;
   }
 
   .news_date,
   .news_category,
   .news_title {
     font-size: 2.5vw !important;
-    line-height: 4vw !important;
+    line-height: 3.8vw !important;
+    font-weight: 500;
   }
 
-  /* 🖼 이미지 */
+  /* 🖼 기사 이미지 */
   .article_image img {
     width: 100%;
     height: auto;
     border-radius: 10px;
   }
 
-  /* 🔗 하단 링크 영역 */
+  /* 🔗 하단 링크 */
   .link,
   #shop_banner,
   #contact_image {
-    margin-top: 5vh;
+    margin-top: 6vh;
   }
 
 }
