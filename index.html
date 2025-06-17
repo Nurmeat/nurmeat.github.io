@@ -1,131 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <script src="https://kit.fontawesome.com/e212dea02c.js" crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/image-map-resizer@1.0.10/js/imageMapResizer.min.js"></script>
-  <link rel="stylesheet" href="./css.css" />
-  <link rel="stylesheet" href="./css_mobile.css" />
-  <title>Nurmeat</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/e212dea02c.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/image-map-resizer@1.0.10/js/imageMapResizer.min.js"></script>
+    <link rel="stylesheet" href="./css.css">
+    <link rel="stylesheet" href="./css_mobile.css">
+    <title>Nurmeat</title>
 </head>
 <body>
-  <header>
-    <nav>
-      <a href="./index.html">
-        <img class="nav_img" src="./assets/img/logo.png" alt="Nurmeat Logo" />
-      </a>
-      <ul>
-        <li><a href="./about.html">ABOUT</a></li>
-        <li><a href="./rnd.html">R&D</a></li>
-        <li><a href="./news.html">NEWS</a></li>
-        <li><a href="./contact.html">CONTACT</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-    <section class="main_content">
-      <div class="video_container">
-        <video autoplay muted loop playsinline>
-          <source src="./assets/video/main.mov" type="video/mp4" />
-          <track src="./assets/video/main_subtitles.vtt" kind="subtitles" srclang="ko" label="Korean Subtitles" default />
-          <track src="./assets/video/main_description.vtt" kind="descriptions" srclang="ko" label="Korean Descriptions" />
-          브라우저가 비디오를 지원하지 않습니다.
-        </video>
-        <div class="video_overlay">
-          <div class="subtxt">Meat Meets Wellness</div>
-          <div class="maintxt">
-            간호사들이 완성한<br />
-            <span style="font-weight: bold;">건강한 육류 식문화</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="main_content">
-      <div class="img_container">
-        <img src="./assets/img/main1-1.png" alt="Main" />
-      </div>
-    </section>
-
-    <section class="main_content">
-      <div class="img_container">
-        <a href="./about.html"><img class="link" src="./assets/img/link_brand.png" alt="Brand_Link" /></a>
-      </div>
-    </section>
-
-    <section class="main_content">
-      <div class="img_container">
-        <img src="./assets/img/main1-2.png" alt="Brand_Logo" />
-      </div>
-    </section>
-
-    <section class="main_content">
-      <div class="article_container">
-        <div class="article_title">
-          <div class="maintxt" id="news_main">널미트의<br />순간들,</div>
-          <div class="subtxt" id="news_sub">널미트의 다양한 소식들을<br />확인해보세요.</div>
-        </div>
-
-        <div class="article_content">
-          <div class="news_container">
-            <span class="news_text news_category">공지사항</span>
-            <a href="https://www.ksilbo.co.kr/news/articleView.html?idxno=1027075" target="_blank" class="news_text news_title">
-              중소기업벤처진흥공단 청년창업사관학교 15기 선정
-            </a>
-            <span class="news_text news_date">2025-05-14</span>
-          </div>
-
-          <div class="news_container">
-            <span class="news_text news_category">공지사항</span>
-            <a href="http://www.ujeil.com/news/articleView.html?idxno=366991" target="_blank" class="news_text news_title">
-              DGIST 달성청년혁신센터 입주기업 선정
-            </a>
-            <span class="news_text news_date">2025-05-15</span>
-          </div>
-
-          <div class="news_container">
-            <span class="news_text news_category">보도자료</span>
-            <a href="https://www.imaeil.com/page/view/2024123115491862179" target="_blank" class="news_text news_title">
-              "건강한 나눔 이어갈 것"…㈜널미트, 사랑의 연탄 나눔 봉사
-            </a>
-            <span class="news_text news_date">2024-12-31</span>
-          </div>
-
-          <div class="news_container">
-            <span class="news_text news_category">보도자료</span>
-            <a href="https://www.imaeil.com/page/view/2023122914514132787" target="_blank" class="news_text news_title">
-              ‘TEAM NUR’, 달성군종합사회복지관서 바베큐 나눔 행사 개최
-            </a>
-            <span class="news_text news_date">2024-12-29</span>
-          </div>
-        </div>
-
-        <div class="article_link">
-          <div class="img_container" style="width: auto;">
-            <a href="./news.html">
-              <img class="link" style="margin: 0; width: 100% !important;" src="./assets/img/link_news.png" alt="NEWS_Link" />
-            </a>
-          </div>
-        </div>
-
-        <div class="article_image">
-          <img src="./assets/img/article1.jpg" alt="img1" />
-          <img src="./assets/img/article2.jpg" alt="img2" />
-          <img src="./assets/img/article1.jpg" alt="img3" />
-        </div>
-      </div>
-    </section>
-
-    <section class="main_content">
-      <div class="img_container">
-        <img src="./assets/img/footer.png" alt="Footer" usemap="#contact_link" />
-        <map name="contact_link">
-          <area shape="rect" coords="100,300,250,350" href="./contact.html" alt="Contact" />
-        </map>
-      </div>
-    </section>
-  </main>
+    <header>
+        <nav class="nav">
+            <a href="./index.html"><img class="nav_img" src="./assets/img/logo.png" alt="Nurmeat Logo"></a>
+            <ul class="nav-list">
+                <li><a href="./about.html"><img class="nav_img nav_link" src="./assets/img/nav_about.png" alt="ABOUT"></a></li>
+                <li><a href="./rnd.html"><img class="nav_img nav_link" src="./assets/img/nav_rnd.png" alt="R&D"></a></li>
+                <li><a href="./news.html"><img class="nav_img nav_link" src="./assets/img/nav_news.png" alt="NEWS"></a></li>
+                <li><a href="./contact.html"><img class="nav_img nav_link" src="./assets/img/nav_contact.png" alt="CONTACT"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="main_content">
+            <div class="video_container">
+                <video autoplay muted loop playsinline>
+                    <source src="./assets/video/main.mov" type="video/mp4">
+                    <track src="./assets/video/main_subtitles.vtt" kind="subtitles" srclang="ko" label="Korean Subtitles" default>
+                    <track src="./assets/video/main_description.vtt" kind="descriptions" srclang="ko" label="Korean Descriptions">
+                    브라우저가 비디오를 지원하지 않습니다.
+                </video>
+                <div class="video_overlay">
+                    <div class="subtxt">
+                        Meat Meets Wellness
+                    </div>
+                    <div class="maintxt">
+                        간호사들이 완성한<br>
+                        <span style="font-weight: bold;">건강한 육류 식문화</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="main_content">
+            <div class="img_container">
+                <img src="./assets/img/main1-1.png" alt="Main">
+            </div>
+        </section>
+        <section class="main_content">
+            <div class="img_container">
+                <a href="./about.html"><img class="link" src="./assets/img/link_brand.png" alt="Brand_Link"></a>
+            </div>
+        </section>
+        <section class="main_content">
+            <div class="img_container">
+                <img src="./assets/img/main1-2.png" alt="Brand_Logo">
+            </div>
+        </section>
+        <section class="main_content">
+            <div class="article_container">
+                <div class="article_title">
+                    <div class="maintxt" id="news_main">
+                        널미트의<br>
+                        순간들,
+                    </div>
+                    <div class="subtxt" id="news_sub">
+                        널미트의 다양한 소식들을<br>확인해보세요.
+                    </div>
+                </div>
+                <div class="article_content">
+                    <div class="news_container">
+                        <span class="news_text news_category">공지사항</span>
+                        <a href="https://www.ksilbo.co.kr/news/articleView.html?idxno=1027075" target="_blank" class="news_text news_title">
+                            중소기업벤처진흥공단 청년창업사관학교 15기 선정
+                        </a>
+                        <span class="news_text news_date">2025-05-14</span>
+                    </div>
+                    <div class="news_container">
+                        <span class="news_text news_category">공지사항</span>
+                        <a href="http://www.ujeil.com/news/articleView.html?idxno=366991" target="_blank" class="news_text news_title">
+                            DGIST 달성청년혁신센터 입주기업 선정
+                        </a>
+                        <span class="news_text news_date">2025-05-15</span>
+                    </div>
+                    <div class="news_container">
+                        <span class="news_text news_category">보도자료</span>
+                        <a href="https://www.imaeil.com/page/view/2024123115491862179" target="_blank" class="news_text news_title">
+                            "건강한 나눔 이어갈 것"…㈜널미트, 사랑의 연탄 나눔 봉사
+                        </a>
+                        <span class="news_text news_date">2024-12-31</span>
+                    </div>
+                    <div class="news_container">
+                        <span class="news_text news_category">보도자료</span>
+                        <a href="https://www.imaeil.com/page/view/2023122914514132787" target="_blank" class="news_text news_title">
+                            ‘TEAM NUR’, 달성군종합사회복지관서 바베큐 나눔 행사 개최
+                        </a>
+                        <span class="news_text news_date">2024-12-29</span>
+                    </div>
+                </div>
+                <div class="article_link">
+                    <div class="img_container" style="width: auto;">
+                        <a href="./news.html"><img class="link" style="margin: 0; width: 100% !important;" src="./assets/img/link_news.png" alt="NEWS_Link"></a>
+                    </div>
+                </div>
+                <div class="article_image">
+                    <img src="./assets/img/article1.jpg" alt="img1">
+                    <img src="./assets/img/article2.jpg" alt="img2">
+                    <img src="./assets/img/article1.jpg" alt="img3">
+                </div>
+            </div>
+        </section>
+        <section class="main_content">
+            <div class="img_container">
+                <img src="./assets/img/footer.png" alt="Footer" usemap="#contact_link">
+                <map name="contact_link">
+                <area shape="rect" coords="100,300,250,350" href="./contact.html" alt="Contact">
+                </map>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
