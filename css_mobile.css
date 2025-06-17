@@ -125,12 +125,13 @@
   }
 
   .news_date,
-  .news_category,
-  .news_title {
-    font-size: 2.5vw !important;
-    line-height: 3.2vw !important;  /* ✅ line-height 줄임 */
-    margin: 0.1vh 0 !important;     /* ✅ 항목 간 여백 최소화 */
-  }
+.news_category,
+.news_title {
+  font-size: 2.0vw !important;        /* 🔽 폰트 크기 줄임 */
+  line-height: 2.8vw !important;     /* 🔽 줄 간격 줄임 */
+  margin: 0.1vh 0 !important;         /* 🔽 위아래 여백 최소화 */
+  color: #666;                        /* 🔧 회색톤으로 정보 강조도 낮춤 (선택사항) */
+}
 
   .news_item {
     margin-bottom: 0.8vh;       /* ✅ 항목 간 여백 줄임 */
