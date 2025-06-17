@@ -8,7 +8,7 @@
     overflow-x: hidden;
   }
 
-  /* 📌 네비게이션 바 (로고 + 메뉴) */
+  /* 📌 네비게이션 바 */
   nav {
     display: flex;
     align-items: center;
@@ -19,7 +19,7 @@
     flex-wrap: nowrap;
   }
 
-  /* ✅ 로고 이미지 (위치 고정) */
+  /* ✅ 로고 이미지 */
   .nav_img:not(.nav_link) {
     height: 3.5vh !important;
     width: auto !important;
@@ -27,7 +27,7 @@
     margin: 0;
   }
 
-  /* ✅ 메뉴 이미지 (이미지 메뉴일 경우) */
+  /* ✅ 메뉴 이미지 (이미지형 메뉴 시) */
   .nav_link {
     height: 2vh !important;
     width: auto !important;
@@ -35,30 +35,35 @@
     margin: 0;
   }
 
-  /* ✅ 텍스트 메뉴 전체 좌측 이동 + 사이 간격 축소 */
+  /* ✅ 텍스트 메뉴 좌측 정렬 + 오버플로우 방지 */
   nav ul {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    gap: 1vw;
+    flex-wrap: nowrap;
+    overflow-x: auto;
     margin: 0;
     padding: 0;
-    margin-left: 4vw;
+    margin-left: 2vw;
+    padding-right: 2vw;
+    gap: 0.8vw;
+    -webkit-overflow-scrolling: touch;
   }
 
-  /* ✅ 텍스트 메뉴 항목 10% 축소 */
+  /* ✅ 메뉴 항목 여백/글자 크기 축소 + 줄바꿈 방지 */
   nav ul a {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100%;
-    padding: 0 0.8vw;
+    padding: 0 0.5vw;
     text-decoration: none;
-    font-size: 0.81rem; /* ✅ 기존 대비 약 10% 축소 */
+    font-size: 0.76rem;
+    white-space: nowrap;
   }
 
-  /* 🎬 비디오 영역 높이 줄이기 */
+  /* 🎬 비디오 영역 */
   .video_container {
     height: 35vh;
   }
@@ -125,7 +130,7 @@
     height: auto;
   }
 
-  /* 🔗 하단 링크 요소 여백 */
+  /* 🔗 하단 링크 영역 */
   .link,
   #shop_banner,
   #contact_image {
