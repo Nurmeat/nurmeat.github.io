@@ -40,8 +40,8 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: flex-end;
-    gap: 1.5vw;
+    justify-content: flex-start; /* ✅ 기존: flex-end → 수정 */
+    gap: 1vw; /* ✅ 약간 좁게 조정 */
     margin: 0;
     padding: 0;
   }
@@ -51,7 +51,7 @@
     align-items: center;
     justify-content: center;
     height: 100%;
-    padding: 0 1vw;
+    padding: 0 0.8vw; /* ✅ 좌우 여백 조금 줄임 */
     text-decoration: none;
   }
 
