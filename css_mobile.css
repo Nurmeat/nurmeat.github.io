@@ -1,6 +1,6 @@
 @media (max-width: 600px) {
 
-  /* 전체 초기화 */
+  /* 📌 전체 초기화 */
   html, body {
     margin: 0;
     padding: 0;
@@ -8,7 +8,7 @@
     overflow-x: hidden;
   }
 
-  /* 네비게이션 바 */
+  /* 📌 네비게이션 바 (로고 + 메뉴) */
   nav {
     display: flex;
     align-items: center;
@@ -19,7 +19,7 @@
     flex-wrap: nowrap;
   }
 
-  /* 로고 이미지 (위치는 그대로) */
+  /* ✅ 로고 이미지 (위치 고정) */
   .nav_img:not(.nav_link) {
     height: 3.5vh !important;
     width: auto !important;
@@ -27,7 +27,7 @@
     margin: 0;
   }
 
-  /* 메뉴 이미지 */
+  /* ✅ 메뉴 이미지 (이미지 메뉴일 경우) */
   .nav_link {
     height: 2vh !important;
     width: auto !important;
@@ -35,30 +35,32 @@
     margin: 0;
   }
 
-  /* 메뉴 리스트 */
+  /* ✅ 텍스트 메뉴 전체 좌측 이동 + 사이 간격 축소 */
   nav ul {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: flex-start;     /* ✅ 좌측 정렬 */
-    gap: 1vw;                         /* ✅ 간격 좁힘 */
+    justify-content: flex-start;
+    gap: 1vw;
     margin: 0;
     padding: 0;
-    margin-left: 4vw;                /* ✅ 텍스트 메뉴만 살짝 좌측으로 이동 */
+    margin-left: 4vw;
   }
 
+  /* ✅ 텍스트 메뉴 항목 10% 축소 */
   nav ul a {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100%;
-    padding: 0 0.8vw;                /* ✅ 여백 줄임 */
+    padding: 0 0.8vw;
     text-decoration: none;
+    font-size: 0.81rem; /* ✅ 기존 대비 약 10% 축소 */
   }
 
-  /* 비디오 영역 */
+  /* 🎬 비디오 영역 높이 줄이기 */
   .video_container {
-    height: 50vh;                    /* ✅ 기존보다 줄임 */
+    height: 35vh;
   }
 
   .video_container video {
@@ -67,7 +69,7 @@
     height: 100%;
   }
 
-  /* 메인 텍스트 */
+  /* 📝 메인 카피 텍스트 */
   .maintxt {
     font-size: 5.5vw;
     line-height: 6.5vw;
@@ -78,7 +80,7 @@
     line-height: 4.5vw;
   }
 
-  /* 기사 영역 (좌우 분할 유지) */
+  /* 📰 기사 섹션 (좌우 분할 유지) */
   .article_container,
   .article_container2 {
     display: grid;
@@ -116,12 +118,14 @@
     line-height: 1.2vh !important;
   }
 
+  /* 🖼 기사 이미지 반응형 처리 */
   .article_image img {
     border-radius: 10px;
     width: 100%;
     height: auto;
   }
 
+  /* 🔗 하단 링크 요소 여백 */
   .link,
   #shop_banner,
   #contact_image {
