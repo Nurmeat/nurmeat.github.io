@@ -1,14 +1,13 @@
 @media (max-width: 600px) {
 
-  /* nav만 조절 (로고 + 메뉴 이미지) */
-  nav {
-    height: auto;
-    padding: 1vh 3vw;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: nowrap;
+  /* 메뉴 이미지만 크기 줄이기 */
+  .nav_link {
+    height: 2vh !important;  /* 절반 수준으로 줄임 */
+    width: auto !important;
+    object-fit: contain !important;
+    margin: 0 !important;
   }
+}
 
   /* 로고 이미지 */
   .nav_img {
