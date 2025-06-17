@@ -1,6 +1,6 @@
 @media (max-width: 600px) {
 
-  /* nav 전체 줄이기 */
+  /* 전체 nav 바 줄이기 및 정렬 유지 */
   nav {
     display: flex !important;
     flex-direction: row !important;
@@ -12,7 +12,7 @@
     flex-wrap: nowrap !important;
   }
 
-  /* 로고 이미지 줄이기 */
+  /* 로고 이미지 (좌측) */
   .nav_img {
     height: 4vh !important;
     width: auto !important;
@@ -20,7 +20,15 @@
     margin: 0 !important;
   }
 
-  /* 메뉴 리스트를 가로로 정렬 */
+  /* 메뉴 항목 이미지만 따로 줄이기 */
+  .nav_link {
+    height: 2vh !important;
+    width: auto !important;
+    object-fit: contain !important;
+    margin: 0 !important;
+  }
+
+  /* 메뉴 리스트 ul */
   nav ul {
     display: flex !important;
     flex-direction: row !important;
@@ -32,17 +40,13 @@
     flex-wrap: nowrap !important;
   }
 
-  /* 메뉴 항목 텍스트 스타일 */
+  /* 메뉴 항목 링크 */
   nav ul a {
-    font-size: 2.5vw !important;
-    font-weight: 600 !important;
-    color: #ffffff !important;
-    text-decoration: none !important;
-    white-space: nowrap !important;
-    padding: 0 1vw !important;
-    height: 100% !important;
     display: flex !important;
     align-items: center !important;
+    justify-content: center !important;
+    height: 100% !important;
+    padding: 0 1vw !important;
+    text-decoration: none !important;
   }
-
 }
