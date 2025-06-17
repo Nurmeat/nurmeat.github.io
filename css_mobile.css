@@ -1,6 +1,6 @@
 @media (max-width: 600px) {
 
-  /* 📌 전체 초기화 */
+  /* 📌 기본 초기화 */
   html, body {
     margin: 0;
     padding: 0;
@@ -8,7 +8,7 @@
     overflow-x: hidden;
   }
 
-  /* 📌 네비게이션 바 */
+  /* 📌 네비게이션 */
   nav {
     display: flex;
     align-items: center;
@@ -16,46 +16,47 @@
     padding: 1vh 3vw;
     background-size: cover;
     flex-wrap: nowrap;
+    height: auto;
   }
 
-  /* ✅ 로고 */
+  /* ✅ 로고 이미지 */
   .nav_img:not(.nav_link) {
     height: 3.5vh !important;
     object-fit: contain;
     margin: 0;
   }
 
-  /* ✅ 메뉴 아이콘 (이미지형) */
+  /* ✅ 메뉴 이미지형 (아이콘 메뉴 등) */
   .nav_link {
-    height: 2.2vh !important;
+    height: 2vh !important;
     object-fit: contain;
     margin: 0;
   }
 
-  /* ✅ 텍스트 메뉴 */
+  /* ✅ 메뉴 리스트 (텍스트 메뉴일 경우) */
   nav ul {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    overflow-x: auto;
     flex-wrap: nowrap;
+    overflow-x: auto;
     margin-left: 2vw;
     padding-right: 2vw;
-    gap: 2vw;
+    gap: 0.8vw;
     list-style: none;
     -webkit-overflow-scrolling: touch;
   }
 
   nav ul a {
-    font-size: 0.8rem;
-    padding: 0.2rem 0.6rem;
-    white-space: nowrap;
-    text-decoration: none;
-    color: inherit;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 0 0.5vw;
+    font-size: 0.75rem;
+    white-space: nowrap;
+    text-decoration: none;
+    height: 100%;
   }
 
   /* 🎬 비디오 영역 */
@@ -69,20 +70,18 @@
     object-fit: cover;
   }
 
-  /* 📝 메인 카피 */
+  /* 📝 메인 텍스트 */
   .maintxt {
-    font-size: 5.2vw;
-    line-height: 6.3vw;
-    font-weight: 600;
+    font-size: 5.5vw;
+    line-height: 6.5vw;
   }
 
   .subtxt {
-    font-size: 3.6vw;
+    font-size: 3.5vw;
     line-height: 5vw;
-    font-weight: 400;
   }
 
-  /* 📰 기사 */
+  /* 📰 기사 레이아웃 */
   .article_container,
   .article_container2 {
     display: grid;
@@ -98,43 +97,39 @@
   }
 
   #news_main {
-    font-size: 5vw;
+    font-size: 5.2vw;
     line-height: 6.5vw;
-    font-weight: 700;
   }
 
   #news_sub {
-    font-size: 3.8vw;
-    line-height: 5.2vw;
-    font-weight: 500;
+    font-size: 3.6vw;
+    line-height: 5vw;
   }
 
   .news_text {
-    font-size: 3.6vw;
-    line-height: 5vw;
-    font-weight: 400;
+    font-size: 3.8vw;
+    line-height: 5.2vw;
   }
 
   .news_date,
   .news_category,
   .news_title {
-    font-size: 2.6vw !important;
+    font-size: 2.5vw !important;
     line-height: 4vw !important;
-    font-weight: 500;
   }
 
-  /* 🖼 기사 이미지 */
+  /* 🖼 이미지 */
   .article_image img {
     width: 100%;
     height: auto;
-    border-radius: 12px;
+    border-radius: 10px;
   }
 
-  /* 🔗 하단 링크 */
+  /* 🔗 하단 링크 영역 */
   .link,
   #shop_banner,
   #contact_image {
-    margin-top: 6vh;
+    margin-top: 5vh;
   }
 
 }
