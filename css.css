@@ -64,18 +64,19 @@ nav {
   padding: 0 3.5vw;
   opacity: 1;
   z-index: 99;
+  align-items: center;
 }
 
-/* ✅ 메뉴 아이콘용 이미지 스타일 */
+/* 메뉴 아이콘용 */
 .nav_img {
-  width: 160px;
+  width: 6vw;
   height: auto;
   object-fit: contain;
-  margin: 2vh 1vw 2vh 3vw;
+  margin: 0 1vw;
   display: block;
 }
 
-/* ✅ 로고 전용 이미지 스타일 */
+/* 로고 전용 */
 .nav_logo {
   width: 160px;
   height: auto;
@@ -289,7 +290,7 @@ nav ul a {
   border-bottom: 1px solid #000000;
 }
 
-/* ✅ 모바일용 nav_logo 스타일 추가 */
+/* 모바일 대응 */
 @media screen and (max-width: 600px) {
   .nav_logo {
     width: 120px;
@@ -297,5 +298,25 @@ nav ul a {
     object-fit: contain;
     display: block;
     margin: 0;
+  }
+
+  .nav_img {
+    width: 16vw;
+    height: auto;
+    object-fit: contain;
+    margin: 0 1vw;
+    display: block;
+  }
+
+  nav {
+    height: 8vh;
+    padding: 0 2vw;
+    align-items: center;
+  }
+
+  .nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
   }
 }
