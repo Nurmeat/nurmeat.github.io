@@ -1,49 +1,84 @@
 @media (max-width: 600px) {
 
-  /* 메뉴 항목 이미지만 작게 */
+  /* ✅ nav 전체 줄이기 */
+  nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: auto;
+    padding: 1vh 3vw;
+    background-size: cover;
+    flex-wrap: nowrap;
+  }
+
+  /* ✅ 로고 이미지 (좌측) */
+  .nav_img:not(.nav_link) {
+    height: 4vh !important;
+    width: auto !important;
+    object-fit: contain;
+    margin: 0;
+  }
+
+  /* ✅ 메뉴 항목 이미지 (ABOUT, R&D 등) */
   .nav_link {
     height: 2vh !important;
     width: auto !important;
-    object-fit: contain !important;
-    margin: 0 !important;
+    object-fit: contain;
+    margin: 0;
   }
 
-  /* 로고 이미지 (좌측 로고는 nav_img만 있고 nav_link 없음) */
-  .nav_img {
-    height: 4vh !important;
-    width: auto !important;
-    object-fit: contain !important;
-    margin: 0 !important;
-  }
-
-  /* nav 바 전체 정리 */
-  nav {
-    display: flex !important;
-    align-items: center !important;
-    justify-content: space-between !important;
-    height: auto !important;
-    padding: 1vh 3vw !important;
-    background-size: cover !important;
-    flex-wrap: nowrap !important;
-  }
-
+  /* ✅ 메뉴 리스트 스타일 */
   nav ul {
-    display: flex !important;
-    flex-direction: row !important;
-    align-items: center !important;
-    justify-content: flex-end !important;
-    gap: 1.5vw !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    flex-wrap: nowrap !important;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 2vw;
+    margin: 0;
+    padding: 0;
+    flex-wrap: nowrap;
   }
 
   nav ul a {
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    height: 100% !important;
-    padding: 0 1vw !important;
-    text-decoration: none !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 0 1vw;
+    height: 100%;
+  }
+
+  /* ✅ 비디오 깨짐 방지 */
+  .video_container {
+    height: 100dvh;
+  }
+
+  .video_container video {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+
+  /* ✅ 기사(article) 레이아웃 유지 */
+  .article_container2, .article_container {
+    padding: 5vh 5vw;
+    gap: 2vh;
+    width: 90vw;
+  }
+
+  .news_text {
+    font-size: 5vw;
+    line-height: 3vh;
+  }
+
+  .news_date, .news_category, .news_title {
+    font-size: 1.5vw !important;
+    line-height: 1vh !important;
+  }
+
+  .article_image img {
+    border-radius: 10px;
+    width: 100%;
   }
 }
