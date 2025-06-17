@@ -91,9 +91,9 @@
   .article_container2 {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    gap: 1.5vh 2vw;                 /* 🔧 줄인 간격 */
-    padding: 3vh 3vw;               /* 🔧 좌우 여백 축소 */
-    width: 94vw;                    /* 🔧 폭 살짝 확장 */
+    gap: 1.2vh 2vw;              /* ✅ 세로 간격 축소 */
+    padding: 3.5vh 5vw;
+    width: 90vw;
     align-items: start;
   }
 
@@ -105,40 +105,40 @@
   }
 
   .article_title {
-    gap: 1vh;
+    gap: 0.8vh;
   }
 
   #news_main {
     font-size: 5.2vw;
-    line-height: 6.5vw;
+    line-height: 6vw;           /* ✅ 살짝 줄임 */
   }
 
   #news_sub {
     font-size: 3.6vw;
-    line-height: 5vw;
+    line-height: 4.5vw;         /* ✅ 줄임 */
   }
 
   .news_text {
-    font-size: 4.1vw;               /* 🔧 글자 확대 */
-    line-height: 5.4vw;
-    margin-bottom: 0.6vh;
+    font-size: 3.8vw;
+    line-height: 4.2vw;         /* ✅ 줄임 */
+    margin-bottom: 0.3vh;
   }
 
   .news_date,
   .news_category,
   .news_title {
-    font-size: 2.8vw !important;    /* 🔧 글자 약간 확대 */
-    line-height: 3.8vw !important;
-    margin: 0.15vh 0 !important;
+    font-size: 2.5vw !important;
+    line-height: 3.2vw !important;  /* ✅ line-height 줄임 */
+    margin: 0.1vh 0 !important;     /* ✅ 항목 간 여백 최소화 */
   }
 
   .news_item {
-    margin-bottom: 1vh;
+    margin-bottom: 0.8vh;       /* ✅ 항목 간 여백 줄임 */
   }
 
   .news_item + .news_item {
     border-top: 1px solid #ddd;
-    padding-top: 1vh;
+    padding-top: 0.8vh;
   }
 
   /* 🖼 이미지 */
