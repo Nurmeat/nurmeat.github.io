@@ -36,6 +36,48 @@
         display: flex;
     }
 
+    nav ul a{@media(max-width: 600px) {
+
+    .video_container {
+        height: 30vh;
+    }
+
+    .maintxt {
+        font-size: 5vw;
+        line-height: 6vw;
+    }
+    .subtxt {
+        font-size: 3vw;
+        line-height: 4vw;
+    }
+
+    nav {
+        height: 5vh;
+        padding: 0;
+        justify-content: space-evenly;
+    }
+
+      .nav_img {
+        margin: 0;
+        width: 120px;
+        height: auto;
+        object-fit: contain;
+        display: block;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    nav a {
+        display: flex;
+    }
+
     nav ul a{
         display: flex;
         align-items: center;
